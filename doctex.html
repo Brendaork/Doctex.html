@@ -1,38 +1,47 @@
 ```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Árvore de Links</title>
+    <title>LinkBio com Barra de Pesquisa</title>
     <style>
-        ul {
-            list-style-type: none; /* Remove as bolinhas da lista */
-            padding-left: 20px; /* Indentar as sublistas */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-container input[type="submit"] {
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Árvore de Links</h1>
-    <ul>
-        <li>
-            <a href="https://www.exemplo1.com" target="_blank">Exemplo 1</a>
-            <ul>
-                <li><a href="https://www.exemplo1a.com" target="_blank">Exemplo 1A</a></li>
-                <li><a href="https://www.exemplo1b.com" target="_blank">Exemplo 1B</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="https://www.exemplo2.com" target="_blank">Exemplo 2</a>
-            <ul>
-                <li><a href="https://www.exemplo2a.com" target="_blank">Exemplo 2A</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="https://www.exemplo3.com" target="_blank">Exemplo 3</a>
-        </li>
-        <!-- Adicione mais links conforme necessário -->
-    </ul>
+
+    <h1>Bem-vindo ao LinkBio</h1>
+
+    <div class="search-container">
+        <form action="#" method="GET">
+            <input type="text" name="search" placeholder="Pesquisar..." required>
+            <input type="submit" value="Buscar">
+        </form>
+    </div>
+
+    <!-- Adicione o restante do conteúdo do seu LinkBio aqui -->
+
 </body>
 </html>
 ```
